@@ -1,0 +1,28 @@
+execute pathogen#infect()
+
+syntax enable
+set background=dark
+colorscheme solarized
+
+set ignorecase
+set smartcase
+set number
+
+set tabstop=4
+set autoindent
+
+set incsearch
+
+
+func! WordProcessorMode()
+	setlocal formatoptions=1
+	setlocal noexpandtab
+	map j gj
+	map k gk
+	set complete+=s
+	set formatprg=par
+	setlocal wrap
+	setlocal linebreak
+endfu
+
+com! WP call WordProcessorMode()

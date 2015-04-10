@@ -1,0 +1,7 @@
+# Created by newuser for 5.0.5
+autoload -U colors && colors
+PROMPT="%{$fg[red]%}> %{$reset_color%}"
+RPROMPT="%{$fg[white]%}%~%{$reset_color%}"
+
+alias ls="ls -F"
+
