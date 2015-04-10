@@ -1,7 +1,14 @@
+" This line starts pathogen; uncomment if not installed
 execute pathogen#infect()
 
 syntax enable
 set background=dark
+
+" Next two lines are for iTerm2 only; remove them elsewhere
+let g:solarized_visibility = "high"
+let g:solarized_visibility = "high"
+
+" Comment this out if solarized is not installed
 colorscheme solarized
 
 set ignorecase
@@ -11,9 +18,7 @@ set number
 set tabstop=4
 set autoindent
 
-set incsearch
-
-
+" Found this script somewhere; ideal settings for word processing
 func! WordProcessorMode()
 	setlocal formatoptions=1
 	setlocal noexpandtab
