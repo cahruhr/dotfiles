@@ -1,7 +1,16 @@
-# Created by newuser for 5.0.5
+alias tmux="TERM=screen-256color-bce tmux"
+alias ls="ls -F"
+alias sl="ls -F"
+
+if [ "$TMUX" = "" ]; then tmux; fi
+
 autoload -U colors && colors
 PROMPT="%{$fg[red]%}> %{$reset_color%}"
 RPROMPT="%{$fg[white]%}%~%{$reset_color%}"
 
-alias ls="ls -F"
+set -o vi
 
+# exiting tmux closes terminal
+# alias exit="if [ "$TMUX" = "" ]; then exit; else exit; exit; fi"
+
+# export PATH=/usr/local/tranquil/bin:$PATH
