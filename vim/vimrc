@@ -1,6 +1,14 @@
 " This line starts pathogen; uncomment if not installed
 execute pathogen#infect()
 
+" Pathogen packages:
+"   rainbow_parentheses.vim
+"   rust.vim 
+"   julia-vim
+"   vim-clojure-static
+"   vim-colors-solarized
+"   vim-fireplace
+
 syntax enable
 set background=dark
 
@@ -15,7 +23,9 @@ set ignorecase
 set smartcase
 set number
 
+set expandtab
 set tabstop=4
+set softtabstop=4
 set autoindent
 
 " Found this script somewhere; ideal settings for word processing
@@ -31,3 +41,4 @@ func! WordProcessorMode()
 endfu
 
 com! WP call WordProcessorMode()
+command RP RainbowParenthesesToggle
