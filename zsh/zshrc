@@ -1,16 +1,29 @@
 alias tmux="TERM=screen-256color-bce tmux"
 alias ls="ls -F"
 alias sl="ls -F"
+alias l="ls -F"
+alias cl="clear"
+alias cls="clear"
+alias s="sudo"
 
+# auto-open tmux
 if [ "$TMUX" = "" ]; then tmux; fi
 
 autoload -U colors && colors
 PROMPT="%{$fg[red]%}> %{$reset_color%}"
 RPROMPT="%{$fg[white]%}%~%{$reset_color%}"
 
+# line-editing with vi bindings
 set -o vi
 
-# exiting tmux closes terminal
-# alias exit="if [ "$TMUX" = "" ]; then exit; else exit; exit; fi"
+# bash history is nice
+bindkey "^R" history-incremental-search-backward
 
-# export PATH=/usr/local/tranquil/bin:$PATH
+# better tab-completion; case-insensitive
+autoload -U compinit
+compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Context/Programs/texbin

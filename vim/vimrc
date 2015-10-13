@@ -1,5 +1,5 @@
 " This line starts pathogen; uncomment if not installed
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " Pathogen packages:
 "   rainbow_parentheses.vim
@@ -11,13 +11,14 @@ execute pathogen#infect()
 
 syntax enable
 set background=dark
+filetype plugin indent on
 
 " Next two lines are for iTerm2 only; remove them elsewhere
-let g:solarized_visibility = "high"
-let g:solarized_visibility = "high"
+"let g:solarized_visibility = "high"
+"let g:solarized_visibility = "high"
 
 " Comment this out if solarized is not installed
-colorscheme solarized
+"colorscheme solarized
 
 set ignorecase
 set smartcase
@@ -27,6 +28,8 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set autoindent
+set breakindent
+set showbreak=->
 
 " Found this script somewhere; ideal settings for word processing
 func! WordProcessorMode()
@@ -36,9 +39,10 @@ func! WordProcessorMode()
 	map k gk
 	set complete+=s
 	set formatprg=par
+    setlocal showbreak=
 	setlocal wrap
 	setlocal linebreak
 endfu
 
 com! WP call WordProcessorMode()
-command RP RainbowParenthesesToggle
+"command RP RainbowParenthesesToggle
