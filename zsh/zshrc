@@ -2,13 +2,20 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias ls="ls -F"
 alias sl="ls -F"
 alias l="ls -F"
+alias la="ls -AF"
+alias ll="ls -al"
 alias cl="clear"
 alias cls="clear"
 alias s="sudo"
 
-# auto-open tmux
+# os-x only
+alias python="python3"
+alias pip="pip3"
+
+# auto-open tmux if it's not open already
 if [ "$TMUX" = "" ]; then tmux; fi
 
+# prompt with 
 autoload -U colors && colors
 PROMPT="%{$fg[red]%}> %{$reset_color%}"
 RPROMPT="%{$fg[white]%}%~%{$reset_color%}"
@@ -26,4 +33,3 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Context/Programs/texbin
