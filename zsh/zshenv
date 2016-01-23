@@ -1,0 +1,2 @@
+typeset -U path
+path=(/usr/local/sbin /usr/local/bin /usr/bin /usr/bin/site_perl /user/bin/vendor_perl /usr/bin/core_perl /home/carter/go/bin)
