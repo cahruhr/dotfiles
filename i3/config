@@ -150,4 +150,12 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        mode hide
 }
+
+# i3-gaps
+
+for_window [class="^.*"] border pixel 0
+
+gaps inner 0
+gaps outer 0
