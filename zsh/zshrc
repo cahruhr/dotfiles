@@ -7,10 +7,11 @@ alias ll="ls -al"
 alias cl="clear"
 alias cls="clear"
 alias s="sudo"
+alias sf="screenfetch"
 
 # os-x only
-alias python="python3"
-alias pip="pip3"
+#alias python="python3"
+#alias pip="pip3"
 
 # auto-open tmux if it's not open already
 if [ "$TMUX" = "" ]; then tmux; fi
