@@ -1,148 +1,85 @@
-! URxvt*termName:                       string
-! URxvt*geometry:                       geometry
-! URxvt*chdir:                          string
-! URxvt*reverseVideo:                   boolean
-! URxvt*loginShell:                     boolean
-! URxvt*multiClickTime:                 number
-! URxvt*jumpScroll:                     boolean
-! URxvt*skipScroll:                     boolean
-! URxvt*pastableTabs:                   boolean
-! URxvt*scrollstyle:                    mode
-URxvt*scrollBar:                      false
-! URxvt*scrollBar_right:                boolean
-! URxvt*scrollBar_floating:             boolean
-! URxvt*scrollBar_align:                mode
-! URxvt*thickness:                      number
-! URxvt*scrollTtyOutput:                boolean
-! URxvt*scrollTtyKeypress:              boolean
-! URxvt*scrollWithBuffer:               boolean
-! URxvt*inheritPixmap:                  boolean
-! URxvt*transparent:                    boolean
-! URxvt*tintColor:                      color
-! URxvt*shading:                        number
-! URxvt*blurRadius:                     HxV
-! URxvt*fading:                         number
-! URxvt*fadeColor:                      color
-! URxvt*utmpInhibit:                    boolean
-! URxvt*urgentOnBell:                   boolean
-! URxvt*visualBell:                     boolean
-! URxvt*mapAlert:                       boolean
-! URxvt*meta8:                          boolean
-! URxvt*mouseWheelScrollPage:           boolean
-! URxvt*tripleclickwords:               boolean
-! URxvt*insecure:                       boolean
-! URxvt*cursorUnderline:                boolean
-! URxvt*cursorBlink:                    boolean
-! URxvt*pointerBlank:                   boolean
-! URxvt*color0:                         color
-! URxvt*color1:                         color
-! URxvt*color2:                         color
-! URxvt*color3:                         color
-! URxvt*color4:                         color
-! URxvt*color5:                         color
-! URxvt*color6:                         color
-! URxvt*color7:                         color
-! URxvt*color8:                         color
-! URxvt*color9:                         color
-! URxvt*color10:                        color
-! URxvt*color11:                        color
-! URxvt*color12:                        color
-! URxvt*color13:                        color
-! URxvt*color14:                        color
-! URxvt*color15:                        color
-! URxvt*colorBD:                        color
-! URxvt*colorIT:                        color
-! URxvt*colorUL:                        color
-! URxvt*colorRV:                        color
-! URxvt*underlineColor:                 color
-! URxvt*scrollColor:                    color
-! URxvt*troughColor:                    color
-! URxvt*highlightColor:                 color
-! URxvt*highlightTextColor:             color
-! URxvt*cursorColor:                    color
-! URxvt*cursorColor2:                   color
-! URxvt*pointerColor:                   color
-! URxvt*pointerColor2:                  color
-! URxvt*borderColor:                    color
-! URxvt*iconFile:                       file
-URxvt*font:                           xft:Tamsyn:pixelsize=18:autohint=true
-URxvt*boldFont:                       xft:Tamsyn:pixelsize=18:autohint=true
-! URxvt*italicFont:                     fontname
-! URxvt*boldItalicFont:                 fontname
-! URxvt*intensityStyles:                boolean
-! URxvt*inputMethod:                    name
-! URxvt*preeditType:                    style
-! URxvt*imLocale:                       string
-! URxvt*imFont:                         fontname
-! URxvt*title:                          string
-! URxvt*iconName:                       string
-! URxvt*saveLines:                      number
-! URxvt*buffered:                       boolean
-! URxvt*depth:                          number
-! URxvt*visual:                         number
-! URxvt*transient-for:                  windowid
-! URxvt*override-redirect:              boolean
-! URxvt*hold:                           boolean
-! URxvt*externalBorder:                 number
-! URxvt*internalBorder:                 number
-! URxvt*borderLess:                     boolean
-! URxvt*lineSpace:                      number
-! URxvt*letterSpace:                    number
-! URxvt*skipBuiltinGlyphs:              boolean
-! URxvt*pointerBlankDelay:              number
-! URxvt*backspacekey:                   string
-! URxvt*deletekey:                      string
-! URxvt*print-pipe:                     string
-! URxvt*modifier:                       modifier
-! URxvt*cutchars:                       string
-! URxvt*answerbackString:               string
-! URxvt*secondaryScreen:                boolean
-! URxvt*secondaryScroll:                boolean
-! URxvt*perl-lib:                       string
-! URxvt*perl-eval:                      perl-eval
-! URxvt*perl-ext-common:                string
-! URxvt*perl-ext:                       string
-! URxvt*iso14755:                       boolean
-! URxvt*iso14755_52:                    boolean
-! URxvt*xrm:                            string
-! URxvt*keysym.sym:                     keysym
-! URxvt*background.border:              boolean
-! URxvt*background.expr:                string
-! URxvt*background.interval:            seconds
-! URxvt*bell-command:                   string
-! URxvt*kuake.hotkey:                   string
-! URxvt*matcher.button:                 string
-! URxvt*matcher.launcher:               string
-! URxvt*matcher.launcher.*:             string
-! URxvt*matcher.pattern.*:              string
-! URxvt*matcher.rend.*:                 string
-! URxvt*remote-clipboard.fetch:         string
-! URxvt*remote-clipboard.store:         string
-! URxvt*searchable-scrollback:          string
-! URxvt*selection-autotransform.*:      string
-! URxvt*selection-pastebin.cmd:         string
-! URxvt*selection-pastebin.url:         string
-! URxvt*selection.pattern-0:            string
-! URxvt*tab-bg:                         colour
-! URxvt*tab-fg:                         colour
-! URxvt*tabbar-bg:                      colour
-! URxvt*tabbar-fg:                      colour
-! URxvt*url-launcher:                   string
-URxvt*background:                     #202020
-URxvt*foreground:                     #40c0e0
-URxvt*color0: #83b7e3
-URxvt*color1: #6c96ba
-URxvt*color2: #557591
-URxvt*color3: #b75742
-URxvt*color4: #f27255
-URxvt*color5: #70caca
-URxvt*color6: #d5654b
-URxvt*color7: #5ca5a5
-URxvt*color8: #398c8d
-URxvt*color9: #49b8ba
-URxvt*color10: #f48b93
-URxvt*color11: #9b5a5f
-URxvt*color12: #b96a70
-URxvt*color13: #fdcf09
-URxvt*color14: #deb609
-URxvt*color15: #f4b0b6
+! no scrollbar
+URxvt*scrollBar:    false
+
+! ----- fonts -----
+Xft.antialias:  1
+Xft.hinting:    1
+Xft.autohint:   0
+Xft.hintstyle:  hintmedium
+Xft.lcdfilter:  lcddefault
+Xft.dpi:        120
+Xft.rgba:       rgb
+
+! tamsyn
+! URxvt*font:         xft:Tamsyn:pixelsize=18:autohint=true
+! URxvt*boldFont:     xft:Tamsyn:pixelsize=18:autohint=true
+! URxvt*letterSpace:  0
+
+! source code pro
+URxvt*font:         xft:Source Code Pro:pixelsize=16
+URxvt*boldFont:     xft:Source Code Pro:pixelsize=16
+URxvt*letterSpace:  -2
+
+! ----- colors -----
+
+! mimicing iterm setup
+
+! anything i cant find right now is set to hot pink
+! hot pink=de00cf
+
+! bg
+URxvt*background:   #1c1e1a     
+! fg
+URxvt*foreground:   #e6e8ef     
+! text over bottom tmux bar (set to same as bg)
+URxvt*color0:       #1c1e1a
+! zsh prompt (red)
+URxvt*color1:       #d54036
+! bottom tmux bar (bright green)
+URxvt*color2:       #5ab977
+! still pink
+URxvt*color3:       #de00cf
+! still pink
+URxvt*color4:       #de00cf
+! still pink
+URxvt*color5:       #de00cf
+! still pink
+URxvt*color6:       #de00cf
+! right-side of zsh prompt, darkish grey
+URxvt*color7:       #6a7c93
+! still pink
+URxvt*color8:       #de00cf
+! still pink
+URxvt*color9:       #de00cf
+! still pink
+URxvt*color10:      #de00cf
+! vim line numbers (pale yellow)
+URxvt*color11:      #deb566
+! vim ~s (after end of file)
+URxvt*color12:      #6a7c93
+! constants (pale pink)
+URxvt*color13:      #b489ad
+! vim comments (dark blue)
+URxvt*color14:      #3f94a8
+! still pink
+URxvt*color15:      #de00cf
+
+! generated from picture
+! URxvt*background:                     #202020
+! URxvt*foreground:                     #40c0e0
+! URxvt*color0: #83b7e3
+! URxvt*color1: #6c96ba
+! URxvt*color2: #557591
+! URxvt*color3: #b75742
+! URxvt*color4: #f27255
+! URxvt*color5: #70caca
+! URxvt*color6: #d5654b
+! URxvt*color7: #5ca5a5
+! URxvt*color8: #398c8d
+! URxvt*color9: #49b8ba
+! URxvt*color10: #f48b93
+! URxvt*color11: #9b5a5f
+! URxvt*color12: #b96a70
+! URxvt*color13: #fdcf09
+! URxvt*color14: #deb609
+! URxvt*color15: #f4b0b6
