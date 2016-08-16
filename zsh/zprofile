@@ -1,3 +1,3 @@
 # if we're in a vterm, kill tmux, then start x
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && killall tmux
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx    # don't logout if x dies
+#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && killall tmux
+#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx    # don't logout if x dies

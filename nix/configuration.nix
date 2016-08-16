@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
@@ -10,12 +6,10 @@
       ./hardware-configuration.nix
     ];
 
-  # VirtualBox support
-  virtualisation.virtualbox.guest.enable = true;
-
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
+
   # Define on which hard drive you want to install Grub.
   boot.loader.grub.device = "/dev/sda";
   boot.initrd.checkJournalingFS = false;
@@ -39,37 +33,28 @@
     defaultLocale = "en_US.UTF-8";
   };
 
+  # font settings
+  # TODO: fix weirdly rendered letters in sourcecodepro
   fonts.fontconfig.ultimate.substitutions = "ms";
 
-  # Set your time zone.
-  # time.timeZone = "Europe/Amsterdam";
+  time.timeZone = "America/New_York";
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
-  # environment.systemPackages = with pkgs; [
-  #   wget
-  # ];
-
-  # List services that you want to enable:
+  environment.systemPackages = with pkgs; [
+    vim wget tmux htop gcc gnumake python python3 stack
+  ];
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
-
-  # Enable the X11 windowing system.
+  # X
   services.xserver.enable = true;
   services.xserver.layout = "us";
-  services.xserver.windowManager.xmonad.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  # users.extraUsers.guest = {
-  #   isNormalUser = true;
-  #   uid = 1000;
-  # };
+  # window manager
+  services.xserver.windowManager.xmonad.enable = true;
 
   # The NixOS release to be compatible with for stateful data such as databases.
   system.stateVersion = "16.03";
-
 }

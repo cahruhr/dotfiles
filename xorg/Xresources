@@ -16,70 +16,45 @@ Xft.rgba:       rgb
 ! URxvt*letterSpace:  0
 
 ! source code pro
-URxvt*font:         xft:Source Code Pro:pixelsize=16
-URxvt*boldFont:     xft:Source Code Pro:pixelsize=16
+URxvt*font:         xft:Source Code Pro:pixelsize=18
+URxvt*boldFont:     xft:Source Code Pro:pixelsize=18
 URxvt*letterSpace:  -2
 
 ! ----- colors -----
 
-! mimicing iterm setup
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
 
-! anything i cant find right now is set to hot pink
-! hot pink=de00cf
+! black
+*.color0:       #1d1f21
+*.color8:       #969896
 
-! bg
-URxvt*background:   #1c1e1a     
-! fg
-URxvt*foreground:   #e6e8ef     
-! text over bottom tmux bar (set to same as bg)
-URxvt*color0:       #1c1e1a
-! zsh prompt (red)
-URxvt*color1:       #d54036
-! bottom tmux bar (bright green)
-URxvt*color2:       #5ab977
-! still pink
-URxvt*color3:       #de00cf
-! still pink
-URxvt*color4:       #de00cf
-! still pink
-URxvt*color5:       #de00cf
-! still pink
-URxvt*color6:       #de00cf
-! right-side of zsh prompt, darkish grey
-URxvt*color7:       #6a7c93
-! still pink
-URxvt*color8:       #de00cf
-! still pink
-URxvt*color9:       #de00cf
-! still pink
-URxvt*color10:      #de00cf
-! vim line numbers (pale yellow)
-URxvt*color11:      #deb566
-! vim ~s (after end of file)
-URxvt*color12:      #6a7c93
-! constants (pale pink)
-URxvt*color13:      #b489ad
-! vim comments (dark blue)
-URxvt*color14:      #3f94a8
-! still pink
-URxvt*color15:      #de00cf
+! red
+*.color1:       #d67305
+*.color9:       #d67305
 
-! generated from picture
-! URxvt*background:                     #202020
-! URxvt*foreground:                     #40c0e0
-! URxvt*color0: #83b7e3
-! URxvt*color1: #6c96ba
-! URxvt*color2: #557591
-! URxvt*color3: #b75742
-! URxvt*color4: #f27255
-! URxvt*color5: #70caca
-! URxvt*color6: #d5654b
-! URxvt*color7: #5ca5a5
-! URxvt*color8: #398c8d
-! URxvt*color9: #49b8ba
-! URxvt*color10: #f48b93
-! URxvt*color11: #9b5a5f
-! URxvt*color12: #b96a70
-! URxvt*color13: #fdcf09
-! URxvt*color14: #deb609
-! URxvt*color15: #f4b0b6
+! green
+*.color2:       #70cadf
+*.color10:      #70cadf
+
+! yellow
+*.color3:       #f0c674
+*.color11:      #f0c674
+
+! blue
+*.color4:       #81a2be
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #b294bb
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #afafaf
+*.color14:      #afafaf
+
+! white
+*.color7:       #c5c8c6
+*.color15:      #ffffff

@@ -4,21 +4,24 @@ alias sl="ls -F"
 alias l="ls -F"
 alias la="ls -AF"
 alias ll="ls -al"
+alias c="clear; ls -F"
 alias cl="clear"
-alias cls="clear"
 alias s="sudo"
 alias sf="screenfetch"
+
+# nixos doesn't have /bin/bash
+alias stack="stack --nix"
 
 # os-x only
 #alias python="python3"
 #alias pip="pip3"
 
 # auto-open tmux if it's not open already
-if [ "$TMUX" = "" ]; then tmux; fi
+#if [ "$TMUX" = "" ]; then tmux; fi
 
 # prompt with 
 autoload -U colors && colors
-PROMPT="%{$fg[red]%}> %{$reset_color%}"
+PROMPT="%{$fg[red]%}λ %{$reset_color%}"
 RPROMPT="%{$fg[white]%}%~%{$reset_color%}"
 
 # line-editing with vi bindings
