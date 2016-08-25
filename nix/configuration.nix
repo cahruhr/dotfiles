@@ -42,7 +42,7 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    vim wget tmux htop gcc gnumake python python3 stack
+    vim git wget tmux htop tree gcc gnumake python python3 stack rxvt_unicode gmrun source-code-pro chromium
   ];
 
   # Enable the OpenSSH daemon.
