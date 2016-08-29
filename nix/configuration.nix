@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ./boot_macbook.nix
       ./macbook.nix
+      ./packages.nix
     ];
 
   # nvidia broadcom etc
@@ -34,11 +35,6 @@
 
   time.timeZone = "America/New_York";
 
-  # List packages installed in system profile. To search by name, run:
-  # $ nix-env -qaP | grep wget
-  environment.systemPackages = with pkgs; [
-    vim git wget tmux htop psmisc tree gcc gnumake gdb clang python python3 stack rustc cargo rxvt_unicode gmrun source-code-pro chromium i7z acpi acpid
-  ];
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -49,6 +45,7 @@
 
   # window manager
   services.xserver.windowManager.xmonad.enable = true;
+  services.xserver.windowManager.xmonad.enableContribAndExtras = true;
 
   # "Same thing without a password:"
   security.sudo.wheelNeedsPassword = false;
