@@ -46,6 +46,14 @@
   # window manager
   services.xserver.windowManager.xmonad.enable = true;
   services.xserver.windowManager.xmonad.enableContribAndExtras = true;
+  services.xserver.windowManager.xmonad.extraPackages = self: [
+    self.xmonad-contrib
+  ];
+
+  # auto mount data partition
+  # TODO
+  #services.autofs.enable = true;
+  #services.autofs.autoMaster = ????
 
   # "Same thing without a password:"
   security.sudo.wheelNeedsPassword = false;

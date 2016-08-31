@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  # networking
   networking.hostName = "daedalus_nix";
   networking.wireless.enable = true;
 
@@ -9,9 +10,9 @@
   services.xserver.synaptics.twoFingerScroll = true;
   services.xserver.synaptics.tapButtons = false;
   services.xserver.synaptics.maxSpeed = "4.0";
-  services.xserver.synaptics.minSpeed = "0.7";
+  services.xserver.synaptics.minSpeed = "1.2";
   services.xserver.synaptics.accelFactor = "0.005";
-  services.xserver.synaptics.scrollDelta = -10;
+  services.xserver.synaptics.scrollDelta = -150;
   services.xserver.synaptics.palmDetect = true;
 
   # not-flux
