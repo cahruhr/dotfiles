@@ -21,7 +21,7 @@ alias stack="stack --nix"
 
 # prompt with 
 autoload -U colors && colors
-PROMPT="%{$fg[red]%}λ %{$reset_color%}"
+PROMPT="%{$fg[blue]%}λ %{$reset_color%}"
 RPROMPT="%{$fg[white]%}%~%{$reset_color%}"
 
 # line-editing with vi bindings
@@ -36,4 +36,5 @@ compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+#export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PATH=$PATH:/home/carter/bin

@@ -1,0 +1,8 @@
+autobuild script that
+    - detects change to specified file(s)
+        e.g. main.c, lib.c
+    - compiles the files
+    - runs the executable
+
+    --args flag to pass args to the executable
+    --stdin to push stdin to the executable

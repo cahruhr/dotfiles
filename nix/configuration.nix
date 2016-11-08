@@ -4,8 +4,13 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./boot.nix
+      ./boot_macbook.nix
+      ./macbook.nix
+      ./packages.nix
     ];
+
+  # nvidia broadcom etc
+  nixpkgs.config.allowUnfree = true;
 
   programs.zsh.enable = true;
 
@@ -16,8 +21,6 @@
       extraGroups = [ "wheel" "networkmanager" ];
       shell = "/run/current-system/sw/bin/zsh";
     };
-
-  networking.hostName = "nixos"; # Define your hostname.
 
   # Select internationalisation properties.
   i18n = {
@@ -32,11 +35,6 @@
 
   time.timeZone = "America/New_York";
 
-  # List packages installed in system profile. To search by name, run:
-  # $ nix-env -qaP | grep wget
-  environment.systemPackages = with pkgs; [
-    vim git wget tmux htop tree gcc gnumake python python3 stack rxvt_unicode gmrun source-code-pro chromium
-  ];
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -47,6 +45,18 @@
 
   # window manager
   services.xserver.windowManager.xmonad.enable = true;
+  services.xserver.windowManager.xmonad.enableContribAndExtras = true;
+  services.xserver.windowManager.xmonad.extraPackages = self: [
+    self.xmonad-contrib
+  ];
+
+  # auto mount data partition
+  # TODO
+  #services.autofs.enable = true;
+  #services.autofs.autoMaster = ????
+
+  # "Same thing without a password:"
+  security.sudo.wheelNeedsPassword = false;
 
   # The NixOS release to be compatible with for stateful data such as databases.
   system.stateVersion = "16.03";
