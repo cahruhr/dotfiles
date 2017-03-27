@@ -1,5 +1,5 @@
 " This line starts pathogen; uncomment if not installed
-"execute pathogen#infect()
+execute pathogen#infect()
 
 " Pathogen packages:
 "   rainbow_parentheses.vim
@@ -24,10 +24,10 @@ set ignorecase
 set smartcase
 set number
 
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+"set expandtab
+set tabstop=2
+"set softtabstop=4
+set shiftwidth=2
 set nocindent
 set smartindent
 set breakindent
