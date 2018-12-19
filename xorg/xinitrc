@@ -34,8 +34,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # the spooky dropbox line that lets it watch all subdirectories [arch]
-# echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; sudo sysctl -p
 xrdb >/.Xresources
-xrandr --output DVI-D-0 --mode 1920x1080 --rate 144 # lower dvi port
-#xrandr --output DVI-D-1 --mode 1920x1080 --rate 144 # upper dvi port (unconfirmed)
-exec xmonad
+#xrandr --output DVI-D-0 --mode 1920x1080 --rate 144 # lower dvi port
+i3 &
+xrandr --output DVI-D-1 --mode 1920x1080 --rate 144 # upper dvi port (unconfirmed)
+urxvt &
+exec redshift 
