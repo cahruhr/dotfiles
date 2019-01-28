@@ -29,7 +29,8 @@ set tabstop=2
 "set softtabstop=4
 set shiftwidth=2
 set nocindent
-set smartindent
+"set smartindent
+set autoindent
 set breakindent
 set showbreak=->
 set nu
