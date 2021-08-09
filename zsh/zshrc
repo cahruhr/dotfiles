@@ -3,38 +3,32 @@ alias ls="ls -F"
 alias sl="ls -F"
 alias l="ls -F"
 alias la="ls -AF"
-alias ll="ls -al"
+alias ll="ls -lah"
 alias c="clear; ls -F"
 alias cl="clear"
 alias s="sudo"
 alias sf="screenfetch"
 
-# nixos doesn't have /bin/bash
-alias stack="stack --nix"
-
-# os-x only
-#alias python="python3"
-#alias pip="pip3"
-
-# auto-open tmux if it's not open already
-#if [ "$TMUX" = "" ]; then tmux; fi
+# use pyenv on mac, to manage python versions non-nightmarishly
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 # prompt with 
 autoload -U colors && colors
-PROMPT="%{$fg[blue]%}λ %{$reset_color%}"
+PROMPT="%{$fg[blue]%}$ %{$reset_color%}"
 RPROMPT="%{$fg[white]%}%~%{$reset_color%}"
 
 # line-editing with vi bindings
 set -o vi
 
-# bash history is nice
+# highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# bash style history
 bindkey "^R" history-incremental-search-backward
 
 # better tab-completion; case-insensitive
 autoload -U compinit
 compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-
-# PATH
-#export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-export PATH=$PATH:/home/carter/bin
